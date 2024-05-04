@@ -34,9 +34,7 @@ a {
   background: gray;
   padding: 10px;
 
-  
-
-  
+  padding-bottom: 150px;  
 }
 .drop-menu:hover {
   transform: translateX(0);
