@@ -12,23 +12,31 @@ a {
 
 }
 .container {
+  position: absolute;
+  left: 0;
   width: 500px;
   margin: 0 auto;
   margin-top: 200px;
 }
 .content {
-  background: gray;
-  padding: 10px;
   overflow: hidden;
 
 }
 .drop-menu {
   display: flex;
   align-items: center;
+  position: relative;
 
-  gap: 100px;
-  transform: translateX(-215px);
+  transform: translateX(-250px);
   transition: transform 250ms linear;
+  width: 285px;
+
+  background: gray;
+  padding: 10px;
+
+  
+
+  
 }
 .drop-menu:hover {
   transform: translateX(0);
@@ -42,8 +50,14 @@ a {
   gap: 10px;
 }
 .content__li {
-  /* width: 100px; */
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
+.icon {
+  width: 10px;
+  height: 12px;
+} 
 .content__li-link {
   color: #fff;
   font-size: 24px;
@@ -60,4 +74,6 @@ a {
   text-align: center;
 
   transition: opacity 250ms linear 100ms;
+  position: absolute;
+  right: -25px;
 }
